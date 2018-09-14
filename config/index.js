@@ -30,7 +30,7 @@ module.exports = {
     cacheBusting: true,
 
     cssSourceMap: true,
-    proxyTable: proxyConfig.proxy,
+	proxyTable: proxyConfig.proxyList,
   },
 
   build: {

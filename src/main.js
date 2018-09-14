@@ -25,7 +25,7 @@ Vue.prototype.token = token;
 // 公共cookie
 import cookie from '@/util/util';
 Vue.prototype.cookie = cookie;
-
+Vue.http.options.xhr = { withCredentials: true } 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -1,0 +1,80 @@
+.SetInfo{
+    .head{
+        display: flex;
+        // position: relative;
+        justify-content: space-between;
+        align-items: center;
+        height: 35px;
+        background: #fff;
+        margin-bottom: 2px;
+        span{
+            &:last-child{
+                padding-right: 11px;
+            }
+        }
+        img{
+            position: absolute;
+            left: 11px;
+            top: 7px;
+            color: #000;
+            font-size: 16px;
+            width: 20px;
+        }
+    }
+    .section{
+        background: #fff;
+        p{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            &:last-child{
+                border: none;
+            }
+            span{
+                &:first-child{
+                    width: 90px;
+                    font-size: 16px;
+                }
+                &:nth-child(2){
+                    flex: 1;
+                }
+
+            }
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .ant-form-item{
+            display: flex;
+            padding: 5px 20px;
+            margin-bottom: 2px;
+            .ant-form-item-label{
+                width: 70px;
+                font-size: 18px;
+            }
+            .ant-form-item-control-wrapper{
+                flex: 1;
+                .ant-input{
+                    border: none;
+                }
+                .ant-select{
+                    width: 100%!important;
+                    outline: none;
+                }
+                .ant-calendar-picker,.ant-select-lg .ant-select-selection--single{
+                    width: 100%;
+                    border: none;
+                }
+            }
+            .ant-select-focused .ant-select-selection, 
+            .ant-select-selection:focus, 
+            .ant-select-selection:active
+            ,.ant-input:focus{
+                box-shadow: none;
+            }
+        }
+    }
+}
